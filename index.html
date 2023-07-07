@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Ysabeau+Infant:ital,wght@1,500&family=Ysabeau+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+       body{
+            background-image:url(ToDobackgr.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        } 
+        #decor{
+    width:17%;
+    height:17%;
+    position: absolute;
+    top: 50px
+}
+#header{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: #292a70;
+            border-radius: 15px;
+            width: 70%;
+            margin-left: 18.293%;
+            margin-right: 9.756%;
+            margin-top: 20px;
+        }
+        #icon{
+            width: 15%;
+            height:15%;
+         
+        }
+        #logo{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bolder;
+            color:#AF5D3C;
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+        }
+        form{
+            margin-left:5%;
+        }
+        #list{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-image: url(list.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 15px;
+            width: 70%;
+            height: 400vh;
+            margin-left: 18.293%;
+            margin-right: 9.756%;
+            margin-top: 5%;
+        }
+        #task-input{
+            font-family: 'Montserrat', sans-serif;
+            width: 65%;
+        }
+        #add-task{
+            font-family: 'Montserrat', sans-serif;
+            margin: 10px 0;
+            cursor: pointer;
+            background: linear-gradient(135deg, #5566B8 0%, #AF5D3C 100%);
+            color: white;
+            font-size: 10px;
+            border: none;
+            width: 65%;  
+          
+        }
+        #add-task:hover{
+            color:#181e3b;
+        }
+        #todo{
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            display: flex;
+        }
+        .done-task {
+            font-family: 'Montserrat', sans-serif;
+            opacity:50%;
+            color: white;
+            display:flex;
+            margin-bottom: 10px;  
+        }
+        #tasks{
+       
+       font-family: 'Montserrat', sans-serif;
+       color: white;
+       display: flex;
+       margin-bottom: 10px; 
+       max-width: 80%; 
+     }
+
+      #left-section{
+
+        position: absolute;
+        top: 25%;
+        left: 23%;
+     }
+     .delete-button {
+      font-family: 'Montserrat', sans-serif;
+      cursor: pointer;
+      background-color: #AF5D3C;
+      color: white;
+      border: none;
+      padding: 4px 8px;
+      margin-right: 10px;
+     }
+     .delete-button:hover{
+      color:#181e3b;
+     }
+@media screen and (min-width:900px){
+    body{
+            background-image:url(ToDobackgr.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #header{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: #292a70;
+            border-radius: 15px;
+            width: 63.415%;
+            margin-left: 18.293%;
+            margin-right: 9.756%;
+            margin-top: 20px;
+        }
+        #list{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-image: url(list.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 15px;
+            width: 63.415%;
+            height: 1200px;
+            margin-left: 18.293%;
+            margin-right: 9.756%;
+            margin-top: 20px;
+        }
+        
+       
+         
+        #logo{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bolder;
+            color:#AF5D3C;
+            margin-left: 2.439%;
+            margin-right: 2.439%;
+        }
+        form{
+            margin-left: 4.878%;
+        }
+        #task-input{
+            font-family: 'Montserrat', sans-serif;
+            width: 48.78%;
+        }
+        #add-task{
+            font-family: 'Montserrat', sans-serif;
+            margin: 10px 0;
+            cursor: pointer;
+            background: linear-gradient(135deg, #5566B8 0%, #AF5D3C 100%);
+            color: white;
+            font-size: 16px;
+            border: none;
+            width: 40%;   
+        }
+        #add-task:hover{
+            color:#181e3b;
+        }
+       
+        #icon{
+            width: 50px;
+            height:50px;
+         
+        }
+        #todo{
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            display: flex;
+        }
+     .done-task {
+            font-family: 'Montserrat', sans-serif;
+            opacity:50%;
+            color: white;
+            display:flex;
+            margin-bottom: 10px;
+          
+           
+           
+        }
+        #tasks{
+       
+       font-family: 'Montserrat', sans-serif;
+       color: white;
+       display: flex;
+       margin-bottom: 10px; 
+       max-width: 70%; 
+}
+
+   #left-section{
+   
+            position: absolute;
+            top: 15%;
+            left: 23%;
+   }
+   .delete-button {
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  background-color: #AF5D3C;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  margin-right: 10px;
+ 
+}
+.delete-button:hover{
+   color:#181e3b;
+}
+#decor{
+    width:17%;
+    height:17%;
+    position: absolute;
+    top: 50px
+}
+}
+
+</style>
+</head>
+<body>
+    <img src="todo-pic.png" id="decor" alt="decoration">
+    <header>
+        <div id="header">
+            <img src="icon.png"  id="icon" alt="TO DO LIST image">
+            <p id="logo"> THE TODO LIST </p>
+            <form id="task-form">
+                <input type="text" id="task-input" name="todo" placeholder="Your task" autofocus>
+                <button type="button" id="add-task" name="button">ADD TASK!</button>
+               
+            </form>
+        </div>
+    </header>
+    <br>
+    <div id="list">
+        <div id="left-section">
+            <p id="todo"><u>TO DO:</u></p>
+        </div>
+    </div>
+    <script>
+       document.addEventListener("keydown", function(event) {
+    if (event.keyCode === 13 && document.activeElement.id === "task-input") {
+        event.preventDefault();
+        addTask();
+    }
+});
+
+document.getElementById("add-task").addEventListener("click", addTask);
+
+function addTask() {
+    var taskInput = document.getElementById("task-input");
+    var taskText = taskInput.value.trim();
+    if (taskText !== "") {
+        var Task = document.createElement("input");
+        Task.type = "checkbox";
+        Task.value = taskText;
+        Task.addEventListener("change", function() {
+            if (this.checked) {
+                this.parentNode.classList.add("done-task");
+                document.getElementById("left-section").appendChild(this.parentNode);
+            } else {
+                this.parentNode.classList.remove("done-task");
+                document.getElementById("left-section").appendChild(this.parentNode);
+            }
+        });
+        var label = document.createElement("label");
+        label.appendChild(document.createTextNode(taskText));
+        var taskElem = document.createElement("div");
+        taskElem.id = "tasks";
+        taskElem.appendChild(createDeleteButton());
+        taskElem.appendChild(Task);
+        taskElem.appendChild(label);
+        document.getElementById("left-section").appendChild(taskElem);
+        taskInput.value = "";
+    }
+}
+
+function createDeleteButton() {
+    var deleteButton = document.createElement("button");
+    deleteButton.innerText = "Delete";
+    deleteButton.classList.add("delete-button");
+    deleteButton.addEventListener("click", function() {
+        this.parentNode.remove();
+    });
+    return deleteButton;
+}
+            
+    </script>
+    
+</body>
+</html>
