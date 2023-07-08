@@ -1,6 +1,8 @@
 # Responsive To-Do List Website
 This is a responsive web application that allows users to create and manage a to-do list. The website is built using JavaScript, HTML, and CSS.
 
+![demo](https://github.com/yousraouahid/To-Do-List/assets/116839478/a851818a-b7a8-40f5-aaf6-688bd8ac8327)
+
 # Features
 Add tasks: Users can enter a task in the input field and click the "Add Task" button or press Enter to add it to the to-do list.
 Mark tasks as done: Each task has a checkbox next to it. When a task is completed, users can check the box to mark it as done.
